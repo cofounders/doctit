@@ -1,0 +1,31 @@
+{
+  "name": "doctit",
+  "main": "doctit.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cofounders/doctit",
+  "authors": [
+    "Sebastiaan Deckers <seb@ninja.sg>"
+  ],
+  "description": "document.title helper utility for single page apps",
+  "keywords": [
+    "document",
+    "title",
+    "document.title",
+    "flash",
+    "message",
+    "status",
+    "notification"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "/*.json",
+    "/*.md",
+    "/*.txt",
+    "Gruntfile.js",
+    "node_modules",
+    "bower_components",
+    "grunt",
+    "tests"
+  ]
+}
