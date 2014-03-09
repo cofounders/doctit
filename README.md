@@ -22,21 +22,21 @@ or
 
 `package.json`
 
-```
-...
-dependencies: {
+```json
+"dependencies": {
   "doctit": ""
 }
-...
 ```
 
 ### HTML
 
-`<script src="doctit.js"></script>`
+```html
+<script src="doctit.js"></script>
+```
 
 ## Usage
 
-```
+```javascript
 // Using CommonJS
 var doctitle = require('doctit');
 
@@ -60,6 +60,9 @@ doctit.message = 'Foo Bar'; // Now shows 'Foo Bar · My App'
 doctit.message = ''; // Only the suffix remains 'My App'
 
 // Flash a status message
+doctit.flash('Stay awhile and listen');
+
+// The bells and whistles
 doctit.flash('Hold my beer!', {
   // Duration in milliseconds of each on/off cycle
   // Does not work in some browsers (Chrome) below 1000ms,
@@ -78,7 +81,7 @@ doctit.flash('Hold my beer!', {
   done: function () {}
 });
 
-// Example: Flash once, but if the web app is in a hidden tab
+// Example: Flash once, but only if the web app is in a hidden tab
 doctit.flash('You\'ve got mail!', { visible: false, times: 1 });
 ```
 
